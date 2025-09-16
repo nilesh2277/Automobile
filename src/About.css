@@ -1,0 +1,140 @@
+/* General About Page */
+.about {
+  font-family: Arial, sans-serif;
+  color: #111827;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero Section */
+.about-hero {
+  background: url("https://images.unsplash.com/photo-1555448248-4c0d1e55f504") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Shine effect for About title */
+.about-hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+
+  /* Gradient colors */
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff7f00,
+    #ffff00,
+    #00ff00,
+    #0000ff,
+    #4b0082,
+    #8f00ff
+  );
+  background-size: 1400% 1400%;
+  
+  /* Apply gradient only on text */
+  -webkit-text-fill-color: transparent;
+  
+  /* Animation */
+  animation: rainbowAnimation 8s ease infinite;
+
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.about-hero p {
+  font-size: 1.3rem;
+}
+
+/* Sections */
+.company-story,
+.founder-highlight,
+.digital-transformation,
+.cta-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+.cta-section {
+  text-align: center;
+  background-color: #111827;
+  color: #facc15;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Animation Keyframes */
+@keyframes rainbowAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 50px 15px;
+  }
+
+  .company-story,
+  .founder-highlight,
+  .digital-transformation,
+  .cta-section {
+    margin: 20px 15px;
+    padding: 15px;
+  }
+
+  .about-hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .about-hero p {
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
